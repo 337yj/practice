@@ -1,0 +1,38 @@
+/* ▼ WHERE YOUR CODE BEGINS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.line-button {
+    position: relative;  /* absolute의 부모는 static아니여야함 */
+    padding: 18px 30px;
+    border: none;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    color: #151b26;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.line-button::after {  /* 가상요소는 기본값이 inline */
+    content: "";
+    position: absolute; /* absolue사용하면 block으로 신분상승 width, height 줄수있음 */
+    bottom: 0;
+    left: 0;
+    width: 0; /* 초기값은 0 (0일땐 px 안주는게 정석) */
+    height: 2px;
+    background-color: #0066ff; 
+    transition: width 250ms ease-in, background-color 250ms ease-in; /* width 바꿀거임 */
+    /* 작은 버튼 인터럭션이나 링크올릴때 보통 250ms 사용함 */
+}
+
+.line-button:hover::after {
+    width: 100%; /* 마우스를 갖다댈 때 width가 100% 돼라 */
+    background-color: rgb(247, 164, 9);
+}
