@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+button {
+    font-family: 'Fugaz One', cursive;
+    border: none;
+    background-color: #fff;
+}
+
+.line-button {  
+    position: relative;
+    padding: 18px 30px;
+    font-size: 16px;
+    line-height: 1.25px;
+    color:#151B26;
+    cursor: pointer;
+}
+
+
+.line-button::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    /* 위치선정 */
+    bottom: 0;
+    left: 0;
+    background-color: #49ff43;
+    transition: width 300ms ease-in, background-color 250ms ease-in;
+}
+
+.line-button:hover::after {
+    width: 100%;
+    background-color: #f76c1a;
+}
