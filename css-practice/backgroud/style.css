@@ -1,0 +1,141 @@
+.like-button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.sr-only {
+  position: absolute;
+  z-index: -100;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowarp;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 840px;
+  padding: 24px;
+  background-color: #fff;
+}
+
+.card-image {  
+  position: relative;
+  width: 300px;
+  height: 200px;
+  border-radius: 6px;
+  margin-right: 24px;
+  background-image: url(./assets/img-house.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-image .like-button {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background-color: #fff;
+  background-image: url(./assets/icon-favorite.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 24px 24px;
+  cursor: pointer;
+}
+
+.card-content {
+  flex-grow: 1;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.plus-badge {
+  display: inline-block;
+  padding: 1px 8px;
+  border-radius: 4px;
+  margin-right: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.428;
+  text-transform: uppercase;
+  background-color: rgba(146, 23, 77, 1);
+  color: #fff;
+}
+
+.property-type span {
+  font-size: 16px;
+  line-height: 1.25;
+  color: #7D858F;
+}
+
+.property-rate::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  background-image: url(./assets/icon-star.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.property-rate strong {
+  font-weight: 400;
+  color: #151B26;
+}
+
+.property-rate span {
+  color: #7D858F;
+}
+
+.card-title {
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #151B26;
+}
+
+.property-detail {
+  font-size: 14px;
+  line-height: 1.1428;
+  color: #7D858F;
+}
+
+.property-detail dd span::after {
+  content: '∙';
+  margin: 0 8px;
+}
+
+.property-detail dd span:last-child::after {
+  content: '';
+  margin: 0;
+}
+
+.property-detail div:first-child {
+  content: '';
+  margin-bottom: 8px;
+}
