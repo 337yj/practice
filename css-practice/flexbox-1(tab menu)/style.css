@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+a {
+  font-size: 18px;
+  color: #8492a6;
+  text-decoration: none;
+  
+}
+
+.tab-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; 
+  justify-content: flex-start; 
+  align-items: center;
+  max-width: 445px;
+  height: 54px;
+  border-bottom: 1px solid #ffffff;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.tab-menu-item {
+  margin-right: 16px;
+}
+
+.active {
+  border-bottom: 3px solid #2860e1;
+}
+
+.tab-menu-item.active a {
+  font-weight: 500;
+  color: #2860e1;
+}
+
+.tab-menu-item a {
+  display: block;
+  padding: 16px 20px;
+  cursor: pointer;
+}
