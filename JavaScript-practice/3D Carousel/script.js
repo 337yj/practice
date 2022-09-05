@@ -22,7 +22,7 @@
 
   const nextButton = get('.next_button')
   nextButton.addEventListener('click', () => {
-    selectedIndex++  // 버튼 누를때 마다 +1 (angle값 얻기위해)
+    selectedIndex++
     rotateCarousel()
   })
 })()
