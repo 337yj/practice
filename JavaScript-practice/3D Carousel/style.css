@@ -1,0 +1,96 @@
+.wrap {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h2 {
+  font-family: 'Oooh Baby', cursive;
+  text-align: center;
+  font-size: 40px;
+  /* font-weight: 700; */
+  margin-bottom: 40px;
+}
+.container {
+  position: relative;
+  width: 420px;
+  height: 320px;
+  margin: 0 auto;
+  perspective: 1000px;
+}
+
+.carousel {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: translateZ(-346px);
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.item {
+  position: absolute;
+  width: 380px;
+  height: 300px;
+  padding: 10px;
+  transition: transform 1s;
+}
+
+.item:nth-child(1) {
+  background-image: url(./assets/flower2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotateY(0deg) translateZ(346px);
+}
+.item:nth-child(2) {
+  background-image: url(./assets/flower1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotateY(60deg) translateZ(346px);
+}
+.item:nth-child(3) {
+  background-image: url(./assets/flower4.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotateY(120deg) translateZ(346px);
+}
+.item:nth-child(4) {
+  background-image: url(./assets/flower3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotateY(180deg) translateZ(346px);
+}
+.item:nth-child(5) {
+  background-image: url(./assets/snow.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotateY(240deg) translateZ(346px);
+}
+.item:nth-child(6) {
+  background-image: url(./assets/rain.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotateY(300deg) translateZ(346px);
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.next_button,
+.prev_button {
+  border-style: none;
+  color: #bfb6af;
+  background-color: #fff;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 50px;
+  font-size: 24px;
+}
