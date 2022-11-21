@@ -70,7 +70,7 @@ document.querySelector('#titleFilter').addEventListener('click', function(){
     
     products.forEach((a) => {
     const temp = document.querySelector(".row").insertAdjacentHTML(
-      "beforeend", // HTML 요소가 삽입되는 위치 선언
+      "beforeend", 
       `<div class="col-sm-4">
           <img src="https://via.placeholder.com/600" class="w-100">
           <h5>${a.title}</h5>
