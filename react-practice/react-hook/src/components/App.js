@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import './App.css';
-import Effect from './components/Effect';
-import Timer from './components/Timer';
+// import Effect from './Effect';
+import Timer from './Timer';
 
-function App() {
+export default function App() {
   const [showTimer, setShowTimer] = useState(false);
 
   return (
@@ -15,4 +15,4 @@ function App() {
   );
 }
 
-export default App;
+
